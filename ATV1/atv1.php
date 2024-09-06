@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATV1</title>
+    <link rel="stylesheet" href="atv1.css">
+</head>
+<body>
+    <main>
 <?php    
 
 $_age = $_GET["age"];
@@ -8,3 +18,7 @@ $_age = $_GET["age"];
         echo "<p>Você pode se cadastrar.</p>";
     }
 ?>
+
+</main>
+</body>
+</html>

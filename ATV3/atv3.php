@@ -1,40 +1,33 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
 
-$_n1 = $_GET["n1"];
-$_n2 = $_GET["n2"];
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATV3</title>
+    <link rel="stylesheet" href="atv3.css">
+</head>
 
-$soma = $_n1 + $_n2;
-$sub = $_n1 - $_n2;
-$multi = $_n1 * $_n2;
-$div = $_n1 / $_n2;
-
-
-echo "1- Soma \n2- Subtração\n3- Multiplicação\n4- Divisão <br>";
-
-
-switch ($_n1 && $_n2) {
-    case "1":
-
-        echo "O Resultado é:", $soma;
-        break;
-
-    case "2":
-
-        echo "O Resultado é:", $sub;
-        break;
-
-    case "3":
-
-        echo "O Resultado é:", $multi;
-        break;
-
-    case "4":
-
-        echo "O Resultado é:", $div;
-        break;
+<body>
+    <main>
 
 
-    default:
-        echo "Número Invalido";
-        break;
-}
+        <?php
+
+        $n1 = $_POST["n1"];
+
+        if ($n1 % 2 == 0) {
+            echo "O número $n1 é: PAR. ";
+        } else {
+            echo "O número $n1 é: ÍMPAR";
+        }
+
+
+
+        ?>
+
+    </main>
+
+</body>
+
+</html>
